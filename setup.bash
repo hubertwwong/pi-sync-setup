@@ -7,4 +7,9 @@ pip3 install ansible
 
 echo "> Clone repo"
 rm -rf /tmp/pi-sync-setup
+cd /tmp
 git clone git@github.com:hubertwwong/pi-sync-setup.git
+
+echo "> Run ansible playbook"
+cd pi-sync-setup
+ansible-playbook playbooks/main.yaml
