@@ -13,7 +13,7 @@ Some scripts to setup a headless resilio sync.
 5. Plug in micro sd to the PI. See the Win 10 RNDIS if it does not work.
 6. Boot.
 7. SSH into the pi.
-8. `bash <(curl -s http://mywebsite.com/myscript.txt)`
+8. `bash <(curl -s https://github.com/hubertwwong/pi-sync-setup/tree/master/setup.bash)`
 
 ## Misc info
 
