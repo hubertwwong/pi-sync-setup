@@ -10,9 +10,10 @@ Some scripts to setup a headless resilio sync.
 2. Disconnect/Reconnect the micro sd.
 3. Update the `wpa_supplcant.conf` with wifi password.
 4. Copy the init directory to the root folder.
-5. Plug in micro sd to the PI.
+5. Plug in micro sd to the PI. See the Win 10 RNDIS if it does not work.
 6. Boot.
 7. SSH into the pi.
+8. `bash <(curl -s http://mywebsite.com/myscript.txt)`
 
 ## Misc info
 
@@ -31,12 +32,21 @@ password: raspberry
 
 ### Windows 10 - RNDIS
 
-You need this driver connect to usb from the PC to PI.
+You need this driver connect to usb from the PC to PI. Driver is in the driver directory in case Microsoft deletes it.
 
 https://www.catalog.update.microsoft.com/Search.aspx?q=USB+RNDIS+Gadget
 
-This is the driver
+This is the driver.
 ```
 Acer Incorporated. - Other hardware - USB Ethernet/RNDIS Gadget	Windows 7,Windows 8,Windows 8.1 and later drivers
 ```
 
+#### To install
+
+https://www.youtube.com/watch?v=XaTmG708Mss
+
+1. Extract the cab
+2. Click on control panel.
+3. Hardware and sound -> Device and Printers.
+4. Look for COM3.
+5. Update the driver and point to the inf file. 
