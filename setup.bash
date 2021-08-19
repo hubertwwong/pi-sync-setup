@@ -11,5 +11,5 @@ cd /tmp
 git clone git clone https://github.com/hubertwwong/pi-sync-setup.git
 
 echo "> Run ansible playbook"
-cd pi-sync-setup
+cd /tmp/pi-sync-setup
 ansible-playbook playbooks/main.yaml
