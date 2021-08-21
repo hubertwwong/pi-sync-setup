@@ -3,14 +3,14 @@
   hosts: localhost
   connection: local
   tasks:
-    - name: Add resilio sync key
+    - name: Resilio sync - Add public key
       ansible.builtin.apt_key:
         url: https://linux-packages.resilio.com/resilio-sync/key.asc
         state: present
       become: yes
 
-    - name: Add resilio sync repo
+    - name: Resilio sync - Add repo
       ansible.builtin.apt_repository:
-        repo: http://linux-packages.resilio.com/resilio-sync/deb resilio-sync non-free
+        repo: deb http://linux-packages.resilio.com/resilio-sync/deb resilio-sync non-free
         state: present
       become: yes
