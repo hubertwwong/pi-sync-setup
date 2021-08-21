@@ -5,7 +5,7 @@
   tasks:
     - name: Add resilio sync key
       ansible.builtin.apt_key:
-        url: https://ftp-master.debian.org/keys/archive-key-6.0.asc
+        url: https://linux-packages.resilio.com/resilio-sync/key.asc
         state: present
       become: yes
 
