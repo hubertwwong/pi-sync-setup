@@ -14,3 +14,15 @@
         repo: deb http://linux-packages.resilio.com/resilio-sync/deb resilio-sync non-free
         state: present
       become: yes
+
+    - name: Enable armel architecture
+      command: dpkg --add-architecture armel
+
+    - name: Ensure apt cache is up to date
+      apt: update_cache=yes
+
+    - name: Resilio sync install
+      apt:
+        name: resilio-sync:armel
+        state: present
+      become: yes
