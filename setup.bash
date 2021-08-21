@@ -12,4 +12,4 @@ git clone https://github.com/hubertwwong/pi-sync-setup.git
 
 echo "> Run ansible playbook"
 cd /tmp/pi-sync-setup
-ansible-playbook playbooks/main.yaml
+ansible-playbook --connection=local playbooks/main.yaml
