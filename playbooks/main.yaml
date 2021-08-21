@@ -1,9 +1,16 @@
 ---
-- name: This is a hello-world example
+- name: Pi zero setup
   hosts: localhost
   connection: local
   tasks:
-    - name: Create a file called '/tmp/testfile.txt' with the content 'hello world'.
-      copy:
-        content: hello worldn
-        dest: /tmp/testfile.txt
+    - name: Add resilio sync key
+      ansible.builtin.apt_key:
+        url: https://ftp-master.debian.org/keys/archive-key-6.0.asc
+        state: present
+      become: yes
+
+    - name: Add resilio sync repo
+      ansible.builtin.apt_repository:
+        repo: http://linux-packages.resilio.com/resilio-sync/deb resilio-sync non-free
+        state: present
+      become: yes

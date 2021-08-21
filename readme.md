@@ -9,11 +9,11 @@ Some scripts to setup a headless resilio sync.
 1. Use Raspberry PI imager to install an OS. Use the slim for headless.
 2. Disconnect/Reconnect the micro sd.
 3. Update the `wpa_supplcant.conf` with wifi password.
-4. Copy the init directory to the root folder.
-5. Plug in micro sd to the PI. See the Win 10 RNDIS if it does not work.
-6. Boot.
-7. SSH into the pi.
-8. `bash <(curl -s https://raw.githubusercontent.com/hubertwwong/pi-sync-setup/master/setup.bash)`
+4. Copy the `init` directory to the `root` of the microsd folder.
+5. Disconnect.
+5. Plug in micro sd to the PI and boot
+6. SSH into the pi.
+7. `bash <(curl -s https://raw.githubusercontent.com/hubertwwong/pi-sync-setup/master/setup.bash)`
 
 ## Misc info
 
@@ -50,3 +50,15 @@ https://www.youtube.com/watch?v=XaTmG708Mss
 3. Hardware and sound -> Device and Printers.
 4. Look for COM3.
 5. Update the driver and point to the inf file. 
+
+
+## TODO
+
+https://pimylifeup.com/raspberry-pi-rclone/
+
+https://help.resilio.com/hc/en-us/articles/206178924-Installing-Sync-package-on-Linux
+Zero is Pi 1.
+
+https://medium.com/@justlaputa/run-resiliosync-btsync-as-normal-user-under-ubuntu-1498f7701a28
+
+https://help.resilio.com/hc/en-us/articles/206178924-Installing-Sync-package-on-Linux
