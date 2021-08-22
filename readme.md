@@ -62,3 +62,5 @@ Zero is Pi 1.
 https://medium.com/@justlaputa/run-resiliosync-btsync-as-normal-user-under-ubuntu-1498f7701a28
 
 https://help.resilio.com/hc/en-us/articles/206178924-Installing-Sync-package-on-Linux
+
+https://help.resilio.com/hc/en-us/articles/206178884-Running-Sync-in-configuration-mode#linux
