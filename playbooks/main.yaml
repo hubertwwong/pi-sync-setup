@@ -31,7 +31,7 @@
     
     - name: Resilio sync - Add config to set run resilio sync from the current user.
       ansible.builtin.copy:
-        src: playbooks/files/resilio-sync.service
+        src: resilio-sync.service
         dest: /usr/lib/systemd/user/resilio-sync.service
         owner: root
         group: root
