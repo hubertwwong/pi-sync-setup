@@ -23,8 +23,17 @@
       apt: update_cache=yes
       become: yes
 
-    - name: Resilio sync install
+    - name: Resilio sync - Install
       apt:
         name: resilio-sync:armel
         state: present
+      become: yes
+    
+    - name: Resilio sync - Add config to set run resilio sync from the current user.
+      ansible.builtin.copy:
+        src: playbooks/files/resilio-sync.service
+        dest: /usr/lib/systemd/user/resilio-sync.service
+        owner: root
+        group: root
+        mode: '0644'
       become: yes
