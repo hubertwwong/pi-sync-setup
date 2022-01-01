@@ -15,6 +15,14 @@ Some scripts to setup a headless resilio sync.
 6. SSH into the pi.
 7. `bash <(curl -s https://raw.githubusercontent.com/hubertwwong/pi-sync-setup/master/setup.bash)`
 
+## Scratch
+
+One liner
+
+```
+
+```
+
 ## Misc info
 
 ### Initial setup - Features
